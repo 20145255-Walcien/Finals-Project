@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Log-In</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Walcien, Jysher Denzel R.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Log-In.css">
+    </head>
+<body>
+    <main>
+        <div class="container">
+            <h1>Select User:</h1>
+            <!--The login screen with two selections: student and teacher-->
+            <button onclick="stdntLog()">
+                <img src="images/Student-icon.jpg" alt="Student Icon" class="icons">
+            </button>
+            <h2 class="btmcenter">Student</h2>
+            <hr>
+            <button onclick="facultyLog()">
+                <img src="images/Teacher-icon.jpg" alt="Student Icon" class="icons">
+            </button>
+            <h2 class="btmcenter">Faculty</h2>
+            <!--The popup after clicking the student image-->
+            <div id="student" class="logBG">
+                <form class="content animation">
+                    <div class="imgcontainer">
+                        <span onclick="exit()" class="close">&times;</span>
+                        <img src="images/Student-icon.jpg" alt="Student Icon" class="login-img">
+                        <h2>Student</h2>
+                    </div>
+    
+                    <div class="container2">
+                        <label for="IDnum"><b>ID Number</b></label>
+                        <input type="text" placeholder="Enter ID Number" name="IDnum" required>
+                        <label for="Bday"><b>Birthday</b></label>
+                        <input type="date" name="Bday" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="submit" formaction="index.html">Login</button>
+                    </div>
+    
+                    <div class="container2" style="background-color: aliceblue;">
+                        <button type="button" onclick="exit()" class="cnclbtn">Cancel</button>
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                    </div>
+                </form>
+            </div>
+            <!--The popup after clicking the teacher image-->
+            <div id="faculty" class="logBG">
+                <form class="content animation">
+                    <div class="imgcontainer">
+                        <span onclick="exit2()" class="close">&times;</span>
+                        <img src="images/Teacher-icon.jpg" alt="Teacher Icon" class="login-img">
+                        <h2>Teacher</h2>
+                    </div>
+    
+                    <div class="container2">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter ID Number" name="uname" required>
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="submit" formaction="index.html">Login</button>
+                    </div>
+                    <!--The cancel and forgot password buttons-->
+                    <div class="container2" style="background-color: aliceblue;">
+                        <button type="button" onclick="exit2()" class="cnclbtn">Cancel</button>
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>  
+<script src="JS/Log-In.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Enrollment</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Walcien, Jysher Denzel R.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Enrollment.css">
+    </head>
+<body>
+    <header class="header">
+        <img src="images/GraceBible-img.jpg" alt="Grace Bible icon">
+        <h1>Enrollment Form</h1>
+    </header>
+    <hr>
+    <div class="container">
+        <form>
+            <div class="personal">
+                    <h3 id="h3-personal">I. Personal Information</h3><br>
+                    <label for="LastName"><b>Last Name:</b></label>
+                    <input type="text" placeholder="Enter your Last Name..." name="LastName" required>
+                    <label for="FirstName"><b>First Name:</b></label>
+                    <input type="text" placeholder="Enter your First Name..." name="FirstName" required>
+                    <label for="MiddleName"><b>Middle Name:</b></label>
+                    <input type="text" placeholder="Enter your Middle Name..." name="MiddleName" required>
+                    <label for="Bday"><b>Birthdate:</b></label>
+                    <input type="date" name="Bday" required>
+                    <label for="Gender"><b>Gender:</b></label>
+                    <select name="Gender" required><option>Male</option><option>Female</option></select>
+                    <label for="Civil"><b>Civil Status:</b></label>
+                    <select name="Civil" required><option>Single</option><option>Married</option><option>Legally Seperated</option><option>Widowed</option></select>
+                    <label for="national"><b>Nationality:</b></label>
+                    <input type="text" placeholder="Enter your nationality..." name="national">
+                    <h3 id="h3-contact">II. Contact Information</h3>
+                    <label for="Mobile"><b>Mobile No.:</b></label>  
+                    <input type="text" placeholder="eg.09172345678" name="Mobile" required>
+                    <label for="Email"><b>Email Address:</b></label>
+                    <input type="email" placeholder="eg. example@gmail.com" name="Email">
+                    <label for="CurrentAddress"><b>Current Address:</b></label>
+                    <input type="text" placeholder="Enter your current address..." name="CurrentAddress" required>
+                    <label for="PermanentAddress"><b>Permanent Address:</b></label>
+                    <input type="text" placeholder="Enter your permanent address..." name="PermanentAddress" required>
+            </div>
+            <div class="parentInfo">
+                    <h3 id="h3-parents">III. Parents' Information</h3><br>
+                    <label for="MotherName"><b>Mother's Maiden Name:</b></label>
+                    <input type="text" placeholder="Enter your Mother's Full Maiden Name..." name="MotherName" required>
+                    <label for="MotherOcc"><b>Mother's Occupation:</b></label>
+                    <input type="text" placeholder="Enter your Mother's Occupation..." name="MotherOcc">
+                    <label for="FatherName"><b>Father's Name:</b></label>
+                    <input type="text" placeholder="Enter your Father's Full Name..." name="FatherName" required>
+                    <label for="FatherOcc"><b>Father's Occupation:</b></label>
+                    <input type="text" placeholder="Enter your Father's Occupation..." name="FatherOcc">
+                    <h3 id="h3-educ">IV. Educational Background</h3>
+                    <label for="LastSchool"><b>Last School Attended:</b></label>
+                    <input type="text" placeholder="Enter the previous school you have attended..." name="LastSchool">
+                    <label for="LastSchAdd"><b>Last School Address:</b></label>
+                    <input type="text" placeholder="Enter the address of the previous school you have attended..." name="LastSchAdd">
+                    <label for="GradeLvl"><b>Select Grade Level you wish to enroll:</b></label>
+                    <select name="GradeLvl" required><option>ELEMENTARY</option><option>HIGH SCHOOL</option></select>
+            </div>
+        <footer class="container2">
+            <button type="reset" class="reset">Reset Entries</button>
+            <button type="submit" class="submit">Submit</button>
+        </footer>
+        </form>
+    </div>
+</body>
+</html>

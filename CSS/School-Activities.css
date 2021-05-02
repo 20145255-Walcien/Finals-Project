@@ -1,0 +1,79 @@
+.slides1, .slides2, .slides3 {
+    display: none;
+}
+.slides1 img, .slides2 img, .slides3 img {
+    width: 100%;
+    height: 400px;
+}
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    margin: 30px auto;
+}
+/*this is the fade-in effect for all the slideshows*/
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}
+p {
+    font-size: 18pt;
+    text-align: justify;
+}
+#footer-p, #contact {
+    text-align: center;
+}
+h1 {
+    font-size: 25pt;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+h3 {
+    font-size: 22pt;
+    margin-bottom: 20px;
+}
+.nsc, .sports-festival, .academic-festival {
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+.nsc-txt, .sports-txt, .acad-txt {
+    width: 35%;
+    margin: 20px auto;
+    text-align: center;
+}
+.nsc-img, .sports-img, .acad-img {
+    width: 40%;
+    margin: 20px auto;
+    display: inline-block;
+}
+.nsc-img img, .sports-img img, .acad-img img {
+    width: 100%;
+    min-width: 200px;
+}
+/*this adjusts and resets the values of the containers for responsiveness*/
+@media screen and (max-width: 1024px) {
+    .nsc, .sports-festival, .academic-festival, .nsc-txt, .sports-txt, .acad-txt, .nsc-img, .sports-img, .acad-img {
+        width: 100%;
+        display: block;
+        align-items: initial;
+    }
+    .slides img {
+        height: auto;
+    }
+    p {
+        text-align: center;
+    }
+}
