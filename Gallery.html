@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Walcien, Jysher Denzel R.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--The school logo with the navigation bar-->
+    <header>
+        <div class="header">
+            <div class="logo"><img src="images/GraceBible-img.jpg" alt="Grace Bible Logo"></div>
+            <div class="nav">
+                <nav class="topnav" id="menu">
+                    <button type="button" class="menu-button" onclick="menu()">Menu</button>
+                    <a href="index.html">Home</a>
+                    <a href="About.html">About GB</a>
+                    <a href="News-Activities.html">News & Activities</a>
+                    <a href="Programs.html">Programs</a>
+                    <a href="Contact.html">Contact Us!</a>
+                    <input type="search" placeholder="Search...">
+                    <input type="submit" value="Search">
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="glass">
+            <h1>Photos</h1>
+            <hr>
+            <section class="photos">
+                <div class="photos-container">
+                    <img src="images/Photo-Gallery-img.jpg" alt="National Bible Quiz Bee image" onclick="view(1)">
+                    <div id="img1" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/Photo-Gallery-img.jpg" alt="National Bible Quiz Bee image">
+                            <p id="img1-txt"></p>
+                        </div>
+                    </div>
+                    <img src="images/Student-Convention-img.jpg" alt="Student Convention image" onclick="view(2)">
+                    <div id="img2" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/Student-Convention-img.jpg" alt="Student Convention image">
+                            <p id="img2-txt"></p>
+                        </div>
+                    </div>
+                    <img src="images/School-Activities-img2.jpg" alt="National Student Convention image" onclick="view(3)">
+                    <div id="img3" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/School-Activities-img2.jpg" alt="National Student Convention image">
+                            <p id="img3-txt"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="photos">
+                <div class="photos-container">
+                    <img src="images/PACE-char-strip-img.jpg" alt="PACE character strips image" onclick="view(4)">
+                    <div id="img4" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/PACE-char-strip-img.jpg" alt="PACE character strips image">
+                            <p id="img4-txt"></p>
+                        </div>
+                    </div>
+                    <img src="images/A.C.E.-img4.jpg" alt="What about A.C.E.? image" onclick="view(5)">
+                    <div id="img5" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/A.C.E.-img4.jpg" alt="What about A.C.E.? image">
+                            <p id="img5-txt"></p>
+                        </div>
+                    </div>
+                    <img src="images/Congratulations-img.jpg" alt="Congratulations image" onclick="view(6)">
+                    <div id="img6" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/Congratulations-img.jpg" alt="Congratulations image">
+                            <p id="img6-txt"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="photos">
+                <div class="photos-container">
+                    <img src="images/School-Activities-img3.jpg" alt="National Student Convention" onclick="view(7)">
+                    <div id="img7" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/School-Activities-img3.jpg" alt="National Student Convention">
+                            <p id="img7-txt"></p>
+                        </div>
+                    </div>
+                    <img src="images/Welcome-Back-img.jpg" alt="Welcome Back image" onclick="view(8)">
+                    <div id="img8" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/Welcome-Back-img.jpg" alt="Welcome Back image">
+                            <p id="img8-txt"></p>
+                        </div>
+                    </div>
+                    <img src="images/School-Stories-2.jpg" alt="Character Trait of the Week image" onclick="view(9)">
+                    <div id="img9" class="gallBG">
+                        <div class="imgcontainer content animation">
+                            <img src="images/School-Stories-2.jpg" alt="Character Trait of the Week image">
+                            <p id="img9-txt"></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!--The footer contains the address of the school, contact #, email, and navigation-->
+    <footer id="footer">
+        <div>
+            <h4 id="footer-h4"></h4>
+            <p id="footer-p"></p>
+        </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="About.html">About GB</a>
+            <a href="News-Activities.html">News & Activities</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Contact.html">Contact Us!</a>
+            <p id="connect">Connect with Us!</p> <br>
+            <a href="https://www.facebook.com/Grace-Bible-Academy-114031843657435"><img id="socialMedia" src="images/Facebook-icon.png" alt="Facebook icon"></a>
+            <a href="Twitter"><img id="socialMedia" src="images/Twitter-icon.png" alt="Twitter icon"></a>
+        </div>
+    </footer>
+    <script src="JS/Gallery.js"></script>
+</body>
+</html>
