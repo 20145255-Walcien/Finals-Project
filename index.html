@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grace Bible Academy</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Walcien, Jysher Denzel R.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--The school logo with the navigation bar-->
+    <header>
+        <div class="header">
+            <div class="logo"><img src="images/GraceBible-img.jpg" alt="Grace Bible Logo"></div>
+            <div class="nav">
+                <nav class="topnav" id="menu">
+                    <button type="button" class="menu-button" onclick="menu()">Menu</button>
+                    <a href="About.html">About GB</a>
+                    <a href="News-Activities.html">News & Activities</a>
+                    <a href="Programs.html">Programs</a>
+                    <a href="Gallery.html">Gallery</a>
+                    <a href="Contact.html">Contact Us!</a>
+                    <input type="search" placeholder="Search...">
+                    <input type="submit" value="Search">
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="glass">
+            <!--The slideshow presenting 4 images-->
+            <section class="slideshow-container">
+                <div class="slides fade">
+                    <img src="images/GBmain.jpg" >
+                </div>
+                <div class="slides fade">
+                    <img src="images/GBmain2.jpg" >
+                </div>
+                <div class="slides fade">
+                    <img src="images/GBmain3.jpg" >
+                </div>
+                <div class="slides fade">
+                    <img src="images/GBmain4.jpg" >
+                </div>
+                <!--The buttons used for making the slideshow present the next/prev image-->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+            <!--The carousel-->
+            <div style="text-align: center;">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+            <div class="caption"><h1 id="caption-h1"></h1><h1 id="caption-h1-2" style="color: blue;"></h1></div>
+            <hr>
+            <section class="news-activities">
+                <div class="news-activities-txt"><h2 id="news-activities-h2"></h2><p id="news-activities-p"></p><a href="News-Activities.html">See More</a></div>
+                <div class="news-activities-img"><img src="images/School-Activities-img1.jpg" alt="School Activities image"></div>
+            </section>
+            <hr>
+            <section class="programs">
+                <div class="programs-img"><img src="images/School-Electives-img1.jpg" alt=""></div>
+                <div class="programs-txt"><h2 id="programs-h2"></h2><p id="programs-p"></p><a href="Programs.html">See More</a></div>
+            </section>
+            <hr>
+            <section class="char-of-the-week">
+                <div class="cotw-txt"><h2 id="cotw-h2"></h2><p id="cotw-p"></p></div>
+                <div class="cotw-img"><img src="images/COTW-1.jpg" alt="Character Trait of the Week"></div>
+            </section>
+        </div>
+        <br>
+    </main>
+    <!--The footer contains the address of the school, contact #, email, and navigation-->
+    <footer id="footer">
+        <div>
+            <h4 id="footer-h4"></h4>
+            <p id="footer-p"></p>
+        </div>
+        <div>
+            <a href="About.html">About GB</a>
+            <a href="News-Activities.html">News & Activities</a>
+            <a href="Programs.html">Programs</a>
+            <a href="Gallery.html">Gallery</a>
+            <a href="Contact.html">Contact Us!</a>
+            <p id="connect">Connect with Us!</p> <br>
+            <a href="https://www.facebook.com/Grace-Bible-Academy-114031843657435"><img id="socialMedia" src="images/Facebook-icon.png" alt="Facebook icon"></a>
+            <a href="Twitter"><img id="socialMedia" src="images/Twitter-icon.png" alt="Twitter icon"></a>
+        </div>
+    </footer>
+    <script src="JS/HomePage.js"></script>
+</body>
+</html>
